@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+.auth {
+  &-card {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    width: 350px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    &-logo {
+      width: 100%;
+      height: auto;
+      &-container {
+        height: 100px;
+        width: 100px;
+        margin: 15px auto;
+      }
+    }
+    & .horizontal-line {
+      width: 30px;
+      padding: 2px 10px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      text-align: center;
+      color: #000;
+      z-index: 5;
+      &-container {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 11px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          height: 1px;
+          background-color: #d9d9d9;
+          z-index: -5;
+        }
+      }
+    }
+    &-head {
+      text-align: center;
+    }
+    &-title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: #000;
+      font-family: "Titan One", Arial, Helvetica, sans-serif;
+      margin: 20px 0px;
+    }
+    &-subtitle {
+      color: rgb(160, 160, 160);
+    }
+    &-btn {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000000;
+      background-color: #fff;
+      border-radius: 3px;
+      color: #000000;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      &:hover {
+        color: #fff;
+        background-color: #222222;
+      }
+      & > svg {
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+      }
+      & > span {
+        display: inline-block;
+      }
+    }
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  &-form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    & .form {
+      &-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      &-label {
+        margin-bottom: 5px;
+        font-size: 0.85rem;
+      }
+      &-control {
+        padding: 10px;
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 5px;
+        cursor: not-allowed;
+        &:hover,
+        &:focus {
+          border-color: #222222;
+        }
+      }
+      &-btn {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #000000;
+        background-color: #222222;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: not-allowed;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        &:hover {
+          color: #000;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
